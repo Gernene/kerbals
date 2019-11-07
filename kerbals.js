@@ -37,7 +37,9 @@ const strToJson = (csvStr) => {
     })
     kerbals.push(kerbal);
   });
-  return JSON.stringify(kerbals);
+  const json = JSON.stringify(kerbals);
+  console.log(json);
+  return json;
 };
 
 readCsv("kerbals.csv");
